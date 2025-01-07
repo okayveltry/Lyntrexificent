@@ -1,3 +1,5 @@
+currentVersion = "1.1"
+
 if IY_LOADED and not _G.IY_DEBUG == true then
     -- error("Infinite Yield is already running!", 0)
     return
@@ -17,7 +19,6 @@ if not game:IsLoaded() then
     notLoaded:Destroy()
 end
 
-currentVersion = "1.0"
 
 Holder = Instance.new("Frame")
 Title = Instance.new("TextLabel")
@@ -12429,7 +12430,7 @@ task.spawn(function()
 
 	if success then
 		if currentVersion ~= latestVersionInfo.Version then
-			notify('Outdated','Get the new version at infyiff.github.io')
+			notify('NEWS','We have just added some new features, enjoy!')
 		end
 
 		if latestVersionInfo.Announcement and latestVersionInfo.Announcement ~= '' then
